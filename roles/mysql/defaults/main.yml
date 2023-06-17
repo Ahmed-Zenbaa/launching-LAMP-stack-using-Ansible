@@ -1,0 +1,6 @@
+mysql_port: 3306/tcp
+mysql_src: dump.sql 
+mysql_dest: /tmp/dump.sql
+php_page_mysql_src: db.php 
+php_page_mysql_dest: /var/www/html/db.php
+
