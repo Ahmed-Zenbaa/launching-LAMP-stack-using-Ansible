@@ -1,3 +1,0 @@
-http_port: 80/tcp 
-php_page_src: index.php 
-php_page_dest: /var/www/html/index.php

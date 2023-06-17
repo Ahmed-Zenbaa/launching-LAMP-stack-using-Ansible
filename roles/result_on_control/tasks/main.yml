@@ -1,6 +1,0 @@
-- name: test access to php page through control server
-  ansible.builtin.shell: curl -i "{{Webserver1_ip}}" 2>&1 | awk '/HTTP\// {print $2}' > "{{php_test_path}}"
-
-- name: test access to (php from mysql) page through control server
-  ansible.builtin.shell: curl -i "{{Webserver1_ip}}"/db.php 2>&1 | awk '/HTTP\// {print $2}' > "{{php_through_mysql_test_path}}"
-
