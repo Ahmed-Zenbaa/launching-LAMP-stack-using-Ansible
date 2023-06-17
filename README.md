@@ -1,5 +1,4 @@
 # launching-LAMP-stack-using-Ansible
-# 2-Tier-App-via-Terraform
 ***open in raw form for better readability***
 ######################################################################################
 
