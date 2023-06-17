@@ -1,0 +1,26 @@
+---
+- name: install Apache
+  yum:
+    name: httpd
+    state: installed
+- name: install PHP module for Apache
+  yum: 
+    name: php 
+    state: installed
+- name: start and enable Apache
+  systemd: 
+    name: httpd 
+    state: started 
+    enabled: yes
+- name: permit traffic in default zone for Apache
+  firewalld:
+    port: "{{ http_port }}"
+    permanent: yes
+    state: enabled
+  notify: 
+  - reload service firewalld
+- name: copy index.php file to the managed host 
+  copy: 
+    src: "{{ php_page_src }}"
+    dest: "{{ php_page_dest }}"
+    mode: '0664'

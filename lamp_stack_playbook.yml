@@ -1,0 +1,11 @@
+--- 
+- hosts: webservers 
+  become: yes
+  roles: 
+  - apache
+  - mysql
+
+- hosts: control
+  become: yes
+  roles:
+  - result_on_control

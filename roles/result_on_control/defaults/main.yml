@@ -1,0 +1,4 @@
+Webserver1_ip: 192.168.5.129
+php_test_path: /home/Ahmed/ansible-labs/project/php_test
+php_through_mysql_test_path: /home/Ahmed/ansible-labs/project/php_through_mysql_test
+

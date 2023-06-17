@@ -1,0 +1,5 @@
+[webservers]
+Webserver1 ansible_host=192.168.5.129 ansible_user=root
+
+[servers]
+control ansible_host=192.168.5.128 ansible_user=root
